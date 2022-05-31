@@ -76,6 +76,40 @@ namespace LinkedList
             }
             Console.WriteLine("{0} inserted into LinkedList", node.data);
         }
+
+        public Node InsertNode(int position, int data)
+        {
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Position");
+            }
+            if (position == 1)
+            {
+                Node node = new Node(data);
+                node.next = this.head;
+                head = node;
+            }
+            else
+            {
+                while (position != 0)
+                {
+                    position--;
+                    if (position == 1)
+                    {
+                        Node node = new Node(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if (position != 1)
+                {
+                    Console.WriteLine("Position is exceed");
+                }
+            }
+            return head;
+        }
     }
 }
    

@@ -6,8 +6,8 @@ namespace LinkedList
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.Create LinkedList \n2.Add new node in LinkedList \n3.Append value in LinkedList" +
-                "\n4.Insert Value in LinkedList");
+            Console.WriteLine("1.Create LinkedList \n2.Add new node in LinkedList \n3.Append value in LinkedList"+
+                "\n4.Insert Value in LinkedList \n5.Delete First Node \n6.Delete Last Node");
             Console.WriteLine("Enter a your option:");
             int option = Convert.ToInt32(Console.ReadLine());
             LinkedListDS linkList = new LinkedListDS();
@@ -34,9 +34,23 @@ namespace LinkedList
                     break;
                     
                 case 4:
-                        break;
-                    
+                    linkList.AddNode(56);
+                    linkList.AddNode(70);
+                    Console.WriteLine("Before inserting New Node:");
+                    linkList.DisplayList();
+                    linkList.InsertNode(2, 30);
+                    Console.WriteLine("\nAfter inserting New Node:");
+                    linkList.DisplayList();
+                    break;
+
+                case 5:
+                    break;
+
+                case 6:
+                    break;
+
                 default:
+                        Console.WriteLine("Enter valid option");
                         break;
                     
             }
