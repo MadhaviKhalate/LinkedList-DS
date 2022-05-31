@@ -28,5 +28,35 @@ namespace LinkedList
             }
             Console.WriteLine("{0} inserted into LinkedList", node1.data);
         }
+
+        public void AddNode(int data)
+        {
+            Node node1 = new Node(data);
+            if (this.head == null)
+            {
+                this.head = node1;
+            }
+            else
+            {
+                node1.next = this.head;
+                head = node1;
+            }
+            Console.WriteLine("{0} inserted into LinkedList", node1.data);
+        }
+        public void DisplayList()
+        {
+            Node position = this.head;
+            if (position == null)
+            {
+                Console.WriteLine("List is Empty");
+                return;
+            }
+            while (position != null)
+            {
+                Console.Write(position.data + " ");
+                position = position.next;
+            }
+        }
     }
 }
+   

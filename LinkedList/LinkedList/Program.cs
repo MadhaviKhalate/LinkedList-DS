@@ -20,8 +20,11 @@ namespace LinkedList
                         //list.Display();
                         break;
                 case 2:
-                    
-                        break;
+                        linkList.AddNode(70);
+                        linkList.AddNode(30);
+                        linkList.AddNode(56);
+                        linkList.DisplayList();
+                    break;
                     
                 case 3:
                    
