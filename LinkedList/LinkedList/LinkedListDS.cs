@@ -57,6 +57,25 @@ namespace LinkedList
                 position = position.next;
             }
         }
+
+        public void AppendNode(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                Node position = head;
+                while (position.next != null)
+                {
+                    position = position.next;
+                }
+                position.next = node;
+            }
+            Console.WriteLine("{0} inserted into LinkedList", node.data);
+        }
     }
 }
    

@@ -27,8 +27,11 @@ namespace LinkedList
                     break;
                     
                 case 3:
-                   
-                        break;
+                        linkList.AppendNode(56);
+                        linkList.AppendNode(30);
+                        linkList.AppendNode(70);
+                        linkList.DisplayList();
+                    break;
                     
                 case 4:
                         break;
