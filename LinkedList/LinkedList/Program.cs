@@ -14,23 +14,23 @@ namespace LinkedList
             switch (option)
             {
                 case 1:
-                        linkList.Create(56);
-                        linkList.Create(30);
-                        linkList.Create(70);
-                        //list.Display();
-                        break;
+                   linkList.Create(56);
+                   linkList.Create(30);
+                   linkList.Create(70);
+                   break;
+
                 case 2:
-                        linkList.AddNode(70);
-                        linkList.AddNode(30);
-                        linkList.AddNode(56);
-                        linkList.DisplayList();
+                    linkList.AddNode(70);
+                    linkList.AddNode(30);
+                    linkList.AddNode(56);
+                    linkList.DisplayList();
                     break;
                     
                 case 3:
-                        linkList.AppendNode(56);
-                        linkList.AppendNode(30);
-                        linkList.AppendNode(70);
-                        linkList.DisplayList();
+                    linkList.AppendNode(56);
+                    linkList.AppendNode(30);
+                    linkList.AppendNode(70);
+                    linkList.DisplayList();
                     break;
                     
                 case 4:
@@ -47,14 +47,22 @@ namespace LinkedList
                     linkList.AddNode(56);
                     linkList.AddNode(30);
                     linkList.AddNode(70);
-                    Console.WriteLine("Before Deleting First element:");
+                    Console.WriteLine("Before Deleting First Node:");
                     linkList.DisplayList();
-                    linkList.DeleteFirstNode();
-                    Console.WriteLine("\nAfter Deleting First element:");
+                    linkList.DeleteLastNode();
+                    Console.WriteLine("\nAfter Deleting First Node:");
                     linkList.DisplayList();
                     break;
 
                 case 6:
+                    linkList.AddNode(56);
+                    linkList.AddNode(30);
+                    linkList.AddNode(70);
+                    Console.WriteLine("Before Deleting Last Node:");
+                    linkList.DisplayList();
+                    linkList.DeleteFirstNode();
+                    Console.WriteLine("\nAfter Deleting Last Node:");
+                    linkList.DisplayList();
                     break;
 
                 default:

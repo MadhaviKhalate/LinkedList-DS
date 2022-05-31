@@ -121,6 +121,26 @@ namespace LinkedList
             head = head.next;
             return head;
         }
+
+        public Node DeleteLastNode()
+        {
+            Node node = head;
+            if (head == null)
+            {
+                Console.WriteLine("List is Empty");
+                return null;
+            }
+            if (head.next == null)
+            {
+                this.head = null;
+            }
+            while (node.next.next != null)
+            {
+                node = node.next;
+            }
+            node.next = null;
+            return head;
+        }
     }
 }
    
