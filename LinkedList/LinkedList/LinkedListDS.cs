@@ -110,6 +110,17 @@ namespace LinkedList
             }
             return head;
         }
+
+        public Node DeleteFirstNode()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+                return null;
+            }
+            head = head.next;
+            return head;
+        }
     }
 }
    

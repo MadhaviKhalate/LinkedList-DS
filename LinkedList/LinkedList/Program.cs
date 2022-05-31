@@ -44,6 +44,14 @@ namespace LinkedList
                     break;
 
                 case 5:
+                    linkList.AddNode(56);
+                    linkList.AddNode(30);
+                    linkList.AddNode(70);
+                    Console.WriteLine("Before Deleting First element:");
+                    linkList.DisplayList();
+                    linkList.DeleteFirstNode();
+                    Console.WriteLine("\nAfter Deleting First element:");
+                    linkList.DisplayList();
                     break;
 
                 case 6:
